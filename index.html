@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DSA Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DSA Progress Tracker</h1>
+        <!-- Add Problem Form -->
+    <div class="form-container">
+        <h2>Add Solved Problem</h2>
+        <form>
+            <input type="text" placeholder="Problem Name" required>
+
+            <select required>
+                <option value="">Platform</option>
+                <option>LeetCode</option>
+                <option>Codeforces</option>
+                <option>GeeksforGeeks</option>
+            </select>
+
+            <select required>
+                <option value="">Topic</option>
+                <option>Array</option>
+                <option>String</option>
+                <option>Linked List</option>
+                <option>Stack</option>
+                <option>Queue</option>
+                <option>Tree</option>
+                <option>Graph</option>
+                <option>DP</option>
+            </select>
+
+            <select required>
+                <option value="">Difficulty</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+
+            <button type="submit">Add Problem</button>
+        </form>
+    </div>
+
+<!-- Filters -->
+<div class="form-container">
+    <h2>Filter Problems</h2>
+
+    <select id="topicFilter">
+        <option value="">All Topics</option>
+        <option>Array</option>
+        <option>String</option>
+        <option>Linked List</option>
+        <option>Stack</option>
+        <option>Queue</option>
+        <option>Tree</option>
+        <option>Graph</option>
+        <option>DP</option>
+    </select>
+
+    <select id="difficultyFilter">
+        <option value="">All Difficulties</option>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+    </select>
+</div>
+
+
+    <!-- Problems Table -->
+    <div class="table-container">
+        <h2>Solved Problems</h2>
+        <table>
+            <thead>
+    <tr>
+        <th>Problem</th>
+        <th>Platform</th>
+        <th>Topic</th>
+        <th>Difficulty</th>
+        <th>Action</th>
+    </tr>
+</thead>
+            <tbody>
+                <!-- Rows will be added later -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Summary Section -->
+    <!-- Summary Section -->
+<div class="summary">
+    <h2>Progress Summary</h2>
+    <p id="total">Total Problems Solved: 0</p>
+
+    <h3>By Topic</h3>
+    <ul id="topicStats"></ul>
+
+    <h3>By Difficulty</h3>
+    <ul id="difficultyStats"></ul>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
