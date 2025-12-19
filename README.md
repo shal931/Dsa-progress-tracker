@@ -6,7 +6,7 @@ It helps users organize problems by platform, topic, and difficulty, and keeps p
 ---
 
 ## 🚀 Live Demo
-https://shal931.github.io/dsa-progress-tracker/
+[https://shal931.github.io/dsa-progress-tracker/](https://shal931.github.io/Dsa-progress-tracker/)
 
 ---
 
